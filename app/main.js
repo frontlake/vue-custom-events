@@ -22,6 +22,18 @@ const inputComponent = {
   }
 };
 
+const noteCountComponent = {
+  template: `<div class="note-count">Note count: <strong>{{ noteCount }}</strong></div>`,
+  data() {
+    return {
+      noteCount: 0
+    }
+  },
+  created() {
+    EventBus.$on('add-note', event => this.noteCount++);
+  }
+}
+
 new Vue({
   el: '#app',
   created() {
@@ -33,7 +45,8 @@ new Vue({
     placeholder: 'Enter a note'
   },
   components: {
-    'input-component': inputComponent
+    'input-component': inputComponent,
+    'note-count-component': noteCountComponent
   },
   methods: {
     addNote(event) {
