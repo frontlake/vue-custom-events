@@ -13,11 +13,13 @@ const inputComponent = {
   },
   methods: {
     monitorEnterKey() {
-      EventBus.$emit('add-note', {
-        note: this.input,
-        timestamp: new Date().toLocaleString()
-      });
-      this.input = '';
+      if (this.input) {
+        EventBus.$emit('add-note', {
+          note: this.input,
+          timestamp: new Date().toLocaleString()
+        });
+        this.input = '';
+      }
     }
   }
 };
