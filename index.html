@@ -23,7 +23,7 @@
           <div v-for="timestamp in timestamps" class="timestamps">{{ timestamp }}</div>
         </div>
       </div>
-      <input-component :placeholder="placeholder"></input-component>
+      <input-component></input-component>
       <div class="column has-text-centered">
         <note-count-component></note-count-component>
       </div>
@@ -31,6 +31,7 @@
   </div>
 
   <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuex"></script>
   <script src="app/main.js"></script>
 </body>
 
