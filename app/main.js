@@ -41,7 +41,6 @@ const inputComponent = {
               placeholder="Enter a note"
               v-model="input"
               @keyup.enter="monitorEnterKey">`,
-  props: ['placeholder'],
   data() {
     return {
       input: ''
