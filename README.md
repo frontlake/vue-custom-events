@@ -6,4 +6,4 @@ A very simple vuejs app for training purposes
 
 Learning basics of Vuex
 
-Demo is available on [https://frontlake.github.io/vue-custom-events/](https://frontlake.github.io/vue-custom-events/)
+Demo is available on [https://frontlake.github.io/vuex-basics/](https://frontlake.github.io/vuex-basics/)
